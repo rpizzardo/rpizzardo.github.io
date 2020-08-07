@@ -4,53 +4,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raquel C. Pizzardo</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="./img/montanhasX.svg">
+    <link rel="icon-x" href="./img/montanhasX.svg">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
   
-    </head>
-
-   <script>
-    // Open the Modal
-    function openModal() {
-      document.getElementById("myModal-x").style.display = "block";
-    }
-    
-    // Close the Modal
-    function closeModal() {
-      document.getElementById("myModal-x").style.display = "none";
-    }
-    
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides2 = document.getElementsByClassName("mySlides-x");
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
-      if (n > slides2.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides2.length}
-      for (i = 0; i < slides2.length; i++) {
-        slides2[i].style.display = "none";
+  
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal-x").style.display = "block";
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+      
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal-x").style.display = "none";
       }
-      slides2[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides2 = document.getElementsByClassName("mySlides-x");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides2.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides2.length}
+        for (i = 0; i < slides2.length; i++) {
+          slides2[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides2[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+  
+    <script>
+      function myFunction() {
+       var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
     }
     </script>
+  
+  
+  </head>
+
+   
 
   <body>
   
@@ -66,6 +83,22 @@
                   <li class="link-menu"><a href="#cv">CV & Contact</a></li>
               </ul>
           </nav>
+
+          <nav class="topnav">
+            <p class="active">RAQUEL C. PIZZARDO</p>
+            <div id="myLinks">
+              <a href="#about">About me</a>
+              <a href="#research">Research</a>
+              <a href="#publications">Publications</a>
+              <a href="#teach">Teaching & Outreach</a>
+              <a href="#field">Fieldwork</a>
+              <a href="#cv">CV & Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"><img class="burger" src="./img/burger.svg"></i>
+            </a>
+          </nav>
+
       </header>
   
       <div class="hero-image" id="hero-image">
@@ -151,7 +184,7 @@
       <section class="publications" id="publications">
     
         <h1>Publications</h1>
-        <img class="cabecalho_img" src="./img/pub.JPG">
+        <img class="cabecalho_img" src="./img/pub.jpg">
         <p style="text-align:center">Please email me if you would like access to pdf versions.</p>
         <p></p>
         <p><b>3</b> <u>Pizzardo RC</u>, NicLughadha E, Rando JG, Forest F, Walker B, Prochazka L, 
@@ -165,7 +198,7 @@
         Field Guide: Espinhaço Range and Chapada dos Veadeiros, BRAZIL - <i>Chamaecrista</i> ser. <i>Coriaceae</i> of 
         <i>campo rupestre</i> (Fabaceae). <i><a href="https://fieldguides.fieldmuseum.org/">Field Museum</a></i>.</p>
         <p> </p>
-        <h2>Selected presentations</h2>
+        <h1>Selected presentations</h1>
         <p>     </p>
         <p><b>2020</b> "Conserving the evolutionary history of rapid and recent radiations: a study case with <i>Chamaecrista</i> ser. <i>Coriaceae</i> (Fabaceae) 
         in the <i>campo rupestre</i>" (video-poster). I Digital Symposium of Systematics and Evolution of Plants.</p>
@@ -206,28 +239,28 @@
         <!-- Images used to open the lightbox -->
                   <div class="row-x">
                     <div class="column-x">
-                      <img src="./img/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                      <img src="./img/img1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
                     </div>
                     <div class="column-x">
-                      <img src="./img/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                      <img src="./img/img2.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
                     </div>
                     <div class="column-x">
                       <img src="./img/img3.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
                     </div>
                     <div class="column-x">
-                      <img src="./img/img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                      <img src="./img/img4.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
                     </div>
                     <div class="column-x">
-                      <img src="./img/img5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                      <img src="./img/img5.JPG" onclick="openModal();currentSlide(5)" class="hover-shadow">
                     </div>
                     <div class="column-x">
-                      <img src="./img/img6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                      <img src="./img/img6.JPG" onclick="openModal();currentSlide(6)" class="hover-shadow">
                     </div>
                     <div class="column-x">
-                      <img src="./img/img7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                      <img src="./img/img7.JPG" onclick="openModal();currentSlide(7)" class="hover-shadow">
                     </div>
                     <div class="column-x">
-                      <img src="./img/img8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                      <img src="./img/img8.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow">
                     </div>
                     <div class="column-x">
                       <img src="./img/img9.JPG" onclick="openModal();currentSlide(9)" class="hover-shadow">
@@ -241,12 +274,12 @@
     
                       <div class="mySlides-x">
                       <div class="numbertext">1 / 9</div>
-                      <img src="./img/img1_wide.jpg" style="width:60%;">
+                      <img src="./img/img1_wide.JPG" style="width:60%;">
                       </div>
     
                       <div class="mySlides-x">
                       <div class="numbertext">2 / 9</div>
-                      <img src="./img/img2_wide.jpg" style="width:60%">
+                      <img src="./img/img2_wide.JPG" style="width:60%">
                       </div>
     
                       <div class="mySlides-x">
@@ -256,27 +289,27 @@
                   
                       <div class="mySlides-x">
                       <div class="numbertext">4 / 9</div>
-                      <img src="./img/img4_wide.jpg" style="width:60%">
+                      <img src="./img/img4_wide.JPG" style="width:60%">
                       </div>
 
                       <div class="mySlides-x">
                         <div class="numbertext">5 / 9</div>
-                        <img src="./img/img5_wide.jpg" style="width:60%">
+                        <img src="./img/img5_wide.JPG" style="width:60%">
                         </div>
                       
                       <div class="mySlides-x">
                         <div class="numbertext">6 / 9</div>
-                        <img src="./img/img6_wide.jpg" style="width:60%">
+                        <img src="./img/img6_wide.JPG" style="width:60%">
                         </div>
                     
                       <div class="mySlides-x">
                         <div class="numbertext">7 / 9</div>
-                        <img src="./img/img7_wide.jpg" style="width:60%">
+                        <img src="./img/img7_wide.JPG" style="width:60%">
                         </div>
                   
                       <div class="mySlides-x">
                         <div class="numbertext">8 / 9</div>
-                        <img src="./img/img8_wide.jpg" style="width:60%">
+                        <img src="./img/img8_wide.JPG" style="width:60%">
                         </div>
                 
                       <div class="mySlides-x">
