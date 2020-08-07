@@ -1,0 +1,326 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raquel C. Pizzardo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="./img/montanhasX.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"
+  
+    </head>
+
+   <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal-x").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal-x").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides2 = document.getElementsByClassName("mySlides-x");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides2.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides2.length}
+      for (i = 0; i < slides2.length; i++) {
+        slides2[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides2[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+  <body>
+  
+      <header>
+          <nav class="menu">
+              <ul>
+                  <li class="nome"><a href="#hero-image">RAQUEL C. PIZZARDO</a></li>
+                  <li class="link-menu"><a href="#about">About me</a></li>
+                  <li class="link-menu"><a href="#research">Research</a></li>
+                  <li class="link-menu"><a href="#publications">Publications</a></li>
+                  <li class="link-menu"><a href="#teach">Teaching & Outreach</a></li>
+                  <li class="link-menu"><a href="#field">Fieldwork</a></li>
+                  <li class="link-menu"><a href="#cv">CV & Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+  
+      <div class="hero-image" id="hero-image">
+        <div class="hero-text">
+              <h1><i>plant evolutionary biologist</i></h1>
+              <p><i>"Extraordinary claims require extraordinary evidence"</i><br>
+                <div class="citation-author">- Carl Sagan</div></p>
+              <p></p>
+        </div>
+      </div>
+
+
+      <section class="about" id="about">
+  
+        <h1>About me</h1>
+        <img class="avatar" src="./img/avatar.jpeg">
+        <p style="text-align:center">My name is Raquel C. Pizzardo and I am currently an undergrad 
+          student in the Laboratory of Systematic and Biogeographic of Plants at the University of 
+          São Paulo in Brazil.</p>
+          
+        <p><b>Education</b></p>
+        <p>BSc. in Biological Sciences, Universidade de São Paulo, SP, Brazil 
+            (February 2017 – July 2021 (expected)).</p>
+        <p>  </p>
+        <p><b>Backgroud</b></p>
+        <p class="justificado">My interesting in research began while taking genetic and botany classes 
+          as a freshman at University of São Paulo. My first experience in the field was as a technician
+           in a lab of Ecology and Genetic Evolution, where I assisted grad students with their projects.  
+           After that, and to pursue my fascination with botany, I became member of the Laboratory of 
+           Systematic and Biogeographic of Plants. My first project was to infer the impact of climatic 
+           changes in the flora of <i>campo rupestr</i>e, a unique rocky field ecosystem in the east of Brazil. 
+           Since then, during my career as a researcher, I have been interested in exploring the relationship 
+           between geographic distribution, evolutionary processes and diversification, 
+           focusing in “sky” island systems and expanding to the field of conservation analyses.</p>
+          <p class="justificado">International research collaboration with the Royal Botanic Garden, Kew, in UK, have allowed
+            me to work as competent conservation biology researcher and to develop significant scientific 
+            outreach skills. Currently, I am working with different approaches to incorporate evolutionary 
+            history into conservation polities, focussing in environments with rapid and recent radiations.</p>
+          <p>I truly enjoy field expeditions as well as several other outdoors activities. As a botanist, 
+          I like to spend my free time in parks, always accompanied by my dog and a good cup of coffee.</p>
+            
+
+      </section>
+
+      <section class="research" id="research">
+          <h1>Research</h1>
+          <img class="Interests" src="./img/int.svg">
+
+          <p><b>Experience</b></p>
+
+          <p><b>Climatic change and naturally fragmented habitats.</b> Supervisor: Thais N. C. Vasconcelos</p>
+          <p>One of the greatest challenges in conservation sciences is to define areas of priority for efficient 
+          preservation of the biodiversity in face of growing anthropic pressure and forecasted climate changes. 
+          Due to the intimate relationship between organisms and their physical environment, areas of elevated species 
+          richness and endemism levels are particularly prone to biodiversity loss resulting from anthropogenic 
+          environmental damage. This can be particularly difficult when we considerate naturally fragmented habitats, 
+          as the Espinhaço Range in the east of Brazil, a mountain chain with high values of both species richness and endemism. </p>
+          <p>To assess whether the distribution of species endemic of the chain regions will be affected differently by predicted 
+          scenarios of climate change, I performed species distribution models for twelve different species that differ in their 
+          distribution. This approach corroborates previous studies suggesting that the endemic flora of the
+          Espinhaço Range is under severe threat from climate change.</p>
+          <p> </p>
+          <p><b>Risk assessment, evolutionary distinctiveness and “sky” island system.</b> Supervisor: Thais N. C. Vasconcelos; Co-supervisor: Eimear NicLughadha</p>
+          <p>Global biodiversity it is under extreme pressure by consequence of human activity, being the 
+          decline in plant diversity particularly notice. Approaches that considerate hot spots of biodiversity, 
+          as well as endemism areas, are commonly used to identify priority regions for conservation. 
+          However, although this is an effective method, conserving the evolutionary process are now also 
+          important, demanding new analysis that incorporate this feature. Mountain chains, “sky” 
+          island systems, had called attention for their impressive biodiversity, being the high numbers of 
+          species richness and endemism result from rapid and recent radiations. In this project, I am 
+          interested to evaluated the conservation of evolution history of a particularly diverse environment 
+          in Brazil, the <i>campo rupestre</i> ecosystem and the mountain chains associated with it.</p>
+          <p>To assess that, I performed the Evolutionary Distinct and Globally Endangered (EDGE) and 
+          phylogenetic diversity methods for the <i>Chamaecrista</i> ser. <i>Coriaceae</i> (Fabaceae) clade. 
+          With this approach, we are now able to understand the evolutionary history of this group and the 
+          challenges in applying conservation policies that link these factors in megadiverse environments. </p>
+
+
+          <p style="text-align: center;"><i>My work has been supported by Fundação de Amparo à Pesquisa do Estado 
+            de São Paulo (FAPESP).</i></p>
+      </section>
+  
+      <section class="publications" id="publications">
+    
+        <h1>Publications</h1>
+        <img class="cabecalho_img" src="./img/pub.jpg">
+        <p style="text-align:center">Please email me if you would like access to pdf versions.</p>
+        <p></p>
+        <p><b>3</b> <u>Pizzardo RC</u>, NicLughadha E, Rando JG, Forest F, Walker B, Prochazka L, 
+        Nogueira A, Vasconcelos TNC (in prep.). Conserving the evolutionary history 
+        of rapid and recent radiations: a study case with <i>Chamaecrista</i> ser. <i>Coriaceae</i> (Fabaceae) 
+        in the <i>campo rupestre</i>.</p>
+        <p><b>2</b> <u>Pizzardo RC</u>, Andrino CO, Vasconcelos TNC (submitted). The effect of climate in the 
+        distribution and conservation of some <i>Paepalanthus</i> (Eriocaulaceae) species endemic to the 
+        Brazilian Espinhaço Range. <i>Flora</i>.</p>
+        <p><b>1</b> <u>Pizzardo RC</u>, Vasconcelos TNC, Nogueira A, Prochazka L, Cota MMT, Rando JG (submitted). 
+        Field Guide: Espinhaço Range and Chapada dos Veadeiros, BRAZIL - <i>Chamaecrista</i> ser. <i>Coriaceae</i> of 
+        <i>campo rupestre</i> (Fabaceae). <i><a href="https://fieldguides.fieldmuseum.org/">Field Museum</a></i>.</p>
+        <p> </p>
+        <h2>Selected presentations</h2>
+        <p>     </p>
+        <p><b>2020</b> "Conserving the evolutionary history of rapid and recent radiations: a study case with <i>Chamaecrista</i> ser. <i>Coriaceae</i> (Fabaceae) 
+        in the <i>campo rupestre</i>" (video-poster). I Digital Symposium of Systematics and Evolution of Plants.</p>
+        <p><b>2019</b> “The challenge of tracing conservation policies in naturally fragmented habitats: 
+        the flora of the Espinhaço Range in a scenario of climate change” (poster). 
+        70th Brazilian National Conference of Botany (Maceió – AL, Brazil).</p>
+        <p><b>2019</b> “The challenge of tracing conservation policies in naturally fragmented habitats: 
+        the flora of the Espinhaço Range in a scenario of climate change” (poster). 39th Regional Botany 
+        Meeting (MG, ES e BA).</p>
+
+      </section>
+
+      <section class="teach" id="teach">
+
+        <h1>Teaching & Outreach</h1>
+
+        <img class="cabecalho_img" src="./img/teach.jpg">
+        <p><b>Teaching Experience</b></p>
+        <p><b>2019 & 2020 (two semesters)</b> Undergraduate Teach Assistant in “Diversity and Evolution of 
+        Photosynthetic Organisms” (Universidade de São Paulo, Brazil). Assisted in the preparation and 
+        presentation of practical classes and support of students during extra class activities and studies. </p>
+        <p><b>2018</b> “Genetics” (undergraduate course – Universidade de São Paulo, Brazil).  
+        Assisted in the preparation of practical classes with <i>Drosophila</i> and support of students 
+        during extra class activities and studies.</p>
+        <p> </p>
+        <p><b>Service and Outreach</b></p>
+        <p><b>2020</b><a href="https://www.kew.org/read-and-watch/campo-rupestre-brazil-secret-gardens"> “Brazil’s secret gardens”</a>. Publication of a Science 
+          Story for the Kew Science website.</p>
+        <p><b>2019</b> Member of the organization team of <a href="https://www.nationalgeographic.org/projects/bioblitz/">“Bioblitz program: Counting Species Through 
+          Citizen Science”</a>, organized by the National Geographic at the Universidade de 
+          São Paulo, Brazil.</p>
+        <p><b>2018-2020</b> Conference organizer, 21th, 22th and 23th <a href="https://semanatematica.ib.usp.br/"><i>Semana Temática da Biologia</i></a>.</p>
+
+      </section>
+
+      <section class="field" id="field">
+          <h1>Fieldwork</h1>
+        <!-- Images used to open the lightbox -->
+                  <div class="row-x">
+                    <div class="column-x">
+                      <img src="./img/img1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img2.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img3.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img4.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img5.JPG" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img6.JPG" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img7.JPG" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img8.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img9.JPG" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                    </div>
+                  </div>
+    
+              <!-- The Modal/Lightbox -->
+                    <div id="myModal-x" class="modal-x">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content-x">
+    
+                      <div class="mySlides-x">
+                      <div class="numbertext">1 / 9</div>
+                      <img src="./img/img1_wide.JPG" style="width:60%;">
+                      </div>
+    
+                      <div class="mySlides-x">
+                      <div class="numbertext">2 / 9</div>
+                      <img src="./img/img2_wide.JPG" style="width:60%">
+                      </div>
+    
+                      <div class="mySlides-x">
+                      <div class="numbertext">3 / 9</div>
+                      <img src="./img/img3_wide.JPG" style="width:60%">
+                      </div>
+                  
+                      <div class="mySlides-x">
+                      <div class="numbertext">4 / 9</div>
+                      <img src="./img/img4_wide.JPG" style="width:60%">
+                      </div>
+
+                      <div class="mySlides-x">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="./img/img5_wide.JPG" style="width:60%">
+                        </div>
+                      
+                      <div class="mySlides-x">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="./img/img6_wide.JPG" style="width:60%">
+                        </div>
+                    
+                      <div class="mySlides-x">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="./img/img7_wide.JPG" style="width:60%">
+                        </div>
+                  
+                      <div class="mySlides-x">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="./img/img8_wide.JPG" style="width:60%">
+                        </div>
+                
+                      <div class="mySlides-x">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="./img/img9_wide.JPG" style="width:60%">
+                        </div>
+                        
+                    </div>
+
+    
+    
+              <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+              <!-- Caption text -->
+                  <div class="caption-container">
+                  <p id="caption"></p>
+                  </div>
+    
+                              
+              </div>        
+
+
+
+      </section>
+
+      <section class="cv" id="cv">
+          <h1>CV & Contact</h1>
+          <img class="cabecalho_img" src="./img/cv.jpg">
+            <p>  </p>
+            
+            <a href="./img/CV_RCPizzardo.pdf"><button class="button">C.V.</button></a>
+            <p>Please feel free to reach me on twitter, or email: <b>raquel.pizzardo@gmail.com</b></p>
+            
+            <div class="icon-rd">
+            <a href="https://twitter.com/RPizzardo"><img class="twitter" src="./img/twitter-brands.svg"></a>
+            <a href="https://github.com/rpizzardo"> <img class="github" src="./img/github-brands.svg"> </a>
+            <a href="https://www.researchgate.net/profile/Raquel_Pizzardo"> <img class="researchgate" src="./img/researchgate-brands.svg"></a>
+            </div>
+
+           <p><i>August 2020</i></p>
+   
+
+       </section>
+
+    </body></html>
