@@ -1,0 +1,361 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raquel C. Pizzardo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon-x" href="./img/montanhasX.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  
+  
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal-x").style.display = "block";
+      }
+      
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal-x").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides2 = document.getElementsByClassName("mySlides-x");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides2.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides2.length}
+        for (i = 0; i < slides2.length; i++) {
+          slides2[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides2[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+  
+    <script>
+      function myFunction() {
+       var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+  
+  
+  </head>
+
+   
+
+  <body>
+  
+      <header>
+          <nav class="menu">
+              <ul>
+                  <li class="nome"><a href="#hero-image">RAQUEL C. PIZZARDO</a></li>
+                  <li class="link-menu"><a href="#about">Sobre</a></li>
+                  <li class="link-menu"><a href="#research">Pesquisa</a></li>
+                  <li class="link-menu"><a href="#publications">Publicações</a></li>
+                  <li class="link-menu"><a href="#teach">Ensino e Divulgação</a></li>
+                  <li class="link-menu"><a href="#field">Campo</a></li>
+                  <li class="link-menu"><a href="#cv">CV & Contato</a></li>
+                  <l1 class="link-menu"><a href="index.html"><img class="br" src="./img/globe-americas.svg" title="Go to English version"></a></l1>
+              </ul>
+          </nav>
+
+          <nav class="topnav">
+            <p class="active">RAQUEL C. PIZZARDO</p>
+            <div id="myLinks">
+              <a href="#about">Sobre</a>
+              <a href="#research">Pesquisa</a>
+              <a href="#publications">Publicações</a>
+              <a href="#teach">Ensino e Divulgação</a>
+              <a href="#field">Campo</a>
+              <a href="#cv">CV & Contato</a>
+              <a href="index.html"><img class="br" src="./img/globe-americas.svg"></a>              
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"><img class="burger" src="./img/burger.svg"></i>
+            </a>
+          </nav>
+
+      </header>
+  
+      <div class="hero-image" id="hero-image">
+        <div class="hero-text">
+              <h1><i>plant evolutionary biologist</i></h1>
+              <p><i>"Extraordinary claims require extraordinary evidence"</i><br>
+                <div class="citation-author">- Carl Sagan</div></p>
+              <p></p>
+        </div>
+      </div>
+
+      <section class="about" id="about">
+  
+        <h1>Sobre</h1>
+        <img class="avatar" src="./img/avatar.jpeg">
+        <p style="text-align:center">Meu nome é Raquel C. Pizzardo e atualmente sou aluna de graduação  
+            no Laboratório de Sistemática e Biogeografia de Plantas na Universidade de São Paulo no Brasil.</p>
+          
+        <p><b>Formação</b></p>
+        <p>BSc. em Ciências Biológicas, Universidade de São Paulo, SP, Brazil 
+            (Fevereiro 2017 – Julho 2021 (esperado)).</p>
+        <p>  </p>
+        <p><b>Biografia</b></p>
+        <p class="justificado">Meu interesse em pesquisa começou quando eu era caloura na Universidade 
+            de São Paulo e fui aluna das disciplinas de genética e botânica. Minha primeira experiência 
+            nessa área foi como técnica em um laboratório de Ecologia e Genética Evolutiva, onde eu 
+            auxiliava alunos de pós-graduação em seus projetos. Depois disso, para perseguir minha 
+            fascinação por botânica, me tornei membro do Laboratório de Sistemática e Biogeografia de 
+            Plantas. Meu primeiro projeto, na Iniciação Cientifica, era medir o impacto de mudanças 
+            climáticas na flora de campo rupestre, um ecossistema único no leste do Brasil. 
+            Desde então, durante minha carreira como pesquisadora, estive interessada em explorar a 
+            relação entre distribuição geográfica, processos evolutivos e diversificação, focando em 
+            sistemas de montanhas e expandindo para o campo da conservação biológica.</p>
+          <p class="justificado">Colaboração internacional com o <i>Royal Botanic Garden</i>, Kew, no 
+              Reino Unido, me permitiu trabalhar de forma competente no campo da conservação biológica e 
+              a desenvolver habilidades significativas em Divulgação Científica. Atualmente, estou 
+              trabalhando com diferentes abordagens para incorporar história evolutiva em políticas de 
+              conservação, focando em ambientes com diversificações rápidas e recentes.</p>
+          <p>Aprecio expedições de campo bem como diversas atividades ao ar livre. Como botânica, gosto de 
+              passar meu tempo livre em parques, sempre acompanhada pelo meu cachorro e uma boa xícara de café.</p>
+            
+
+      </section>
+
+      <section class="research" id="research">
+          <h1>Pesquisa</h1>
+          <img class="Interests" src="./img/int_pt.svg">
+
+          <p><b>Experiência</b></p>
+
+          <p><b>Mundanças climáticas e ambientes naturalmente fragmentados</b> Orientadora: Thais N. C. Vasconcelos</p>
+          <p>Um dos maiores desafios na conservação é a definição de áreas prioritárias para a conservação 
+            efetiva de biodiversidade no cenário das mudanças climáticas. Por conta da estreita relação dos 
+            organismos com seu ambiente físico, áreas de elevada riqueza de espécies e endemismo são 
+            particularmente suscetíveis de perda de biodiversidade resultante da destruição antropogênica. 
+            Isso pode ser particularmente difícil quando considerados ambientes naturalmente fragmentados, 
+            como a Cadeia do Espinhaço no leste do Brasil, uma cadeia de montanhas com altos valores de riqueza 
+            de espécies e endemismo.</p>
+            <p>Para acessar o quanto a distribuição de espécies endêmicas da cadeia será afetada pelos cenários 
+            preditos de mudanças climáticas, eu construí modelos de distribuição de espécies para diferentes 
+            espécies que diferem em sua distribuição. Essa abordagem corrobora com estudos prévios que sugerem 
+            que a flora endêmica da Cadeia do Espinhaço está sobre séria ameaça.</p>
+          <p> </p>
+          <p><b>Avaliação de risco, singularidade evolutiva e sistemas de montanhas.</b> Orientadora: Thais N. C. Vasconcelos; Co-orientadora: Eimear NicLughadha</p>
+          <p>Diversidade global está sobre extrema pressão por consequência da atividade humana, sendo a perda 
+            de diversidade vegetal particularmente notável. Abordagens que consideram <i>hot spots</i> de 
+            biodiversidade, bem como áreas de endemismo, são comumente usadas para identificar regiões 
+            para conservação. Entretanto, mesmo que esse seja um método efetivo, conservar a história 
+            evolutiva é agora também importante, exigindo novas análises que incorporem esse aspecto. 
+            Cadeias de montanhas têm chamado atenção pela impressionante biodiversidade, e o alto numero de 
+            espécies e endemismo resultado de radiações rápidas e recentes. Nesse projeto, estou interessada 
+            em avaliar a conservação da história evolutiva de um ambiente particularmente diverso no Brasil, 
+            o campo rupestre e suas montanhas associadas.</p>
+          <p>Para avaliar isso, performei os métodos EDGE (<i> Evolutionary Distinct and Globally 
+            Endangered</i>) e Diversidade Filogenética para o clado <i>Chamaecrista</i> ser. 
+            <i>Coriaceae</i>. Com essa abordagem, somos agora capazes de entender a história evolutiva 
+            desse grupo e os desafios em aplicar politicas de conservação que liguem esses fatores em um 
+            ambiente megadiverso.</p>
+
+
+          <p style="text-align: center;"><i>Meu trabalho foi financiado pela Fundação de Amparo à Pesquisa do Estado 
+            de São Paulo (FAPESP).</i></p>
+      </section>
+  
+      <section class="publications" id="publications">
+    
+        <h1>Publicações</h1>
+        <img class="cabecalho_img" src="./img/pub.jpg">
+        <p style="text-align:center">Por favor, me mande um email se quiser acessar as versões em pdf.</p>
+        <p></p>
+        <p><b>3</b> <u>Pizzardo RC</u>, NicLughadha E, Rando JG, Forest F, Walker B, Prochazka L, 
+        Nogueira A, Vasconcelos TNC (em prep.). Conserving the evolutionary history 
+        of rapid and recent radiations: a study case with <i>Chamaecrista</i> ser. <i>Coriaceae</i> (Fabaceae) 
+        in the <i>campo rupestre</i>.</p>
+        <p><b>2</b> <u>Pizzardo RC</u>, Andrino CO, Vasconcelos TNC (em prep.). The effect of climate in the 
+        distribution and conservation of some <i>Paepalanthus</i> (Eriocaulaceae) species endemic to the 
+        Brazilian Espinhaço Range.</p>
+        <p><b>1</b> <u>Pizzardo RC</u>, Vasconcelos TNC, Nogueira A, Prochazka L, Cota MMT, Rando JG (submetido). 
+        Field Guide: Espinhaço Range and Chapada dos Veadeiros, BRAZIL - <i>Chamaecrista</i> ser. <i>Coriaceae</i> of 
+        <i>campo rupestre</i> (Fabaceae). <i><a href="https://fieldguides.fieldmuseum.org/">Field Museum</a></i>.</p>
+        <p> </p>
+        <h1>Apresentações Selecionadas</h1>
+        <p>     </p>
+        <p><b>2020</b> "Conservando a história evolutiva de radiações rápidas e recentes: um estudo com <i>Chamaecrista</i> ser. <i>Coriaceae</i> (Fabaceae) em campos rupestres" 
+        (video-pôster). I Simpósio Digital de Sistemática e Evolução de Plantas.</p>
+        <p><b>2019</b> “Avaliando o impacto das mudanças climáticas em uma flora megadiversa: o futuro de <i>Paepalanthus</i> Mart. (Eriocaulaceae) na Cadeia do Espinhaço” (pôster). 
+        70° Congresso Nacional de Botânica (Maceió – AL, Brasil).</p>
+        <p><b>2019</b> “Avaliando o impacto das mudanças climáticas em uma flora megadiversa: o futuro de <i>Paepalanthus</i> Mart. (Eriocaulaceae) na Cadeia do Espinhaço” (pôster). 
+        39° Encontro Regional de Botânica (MG, ES e BA; Diamantina - MG, Brasil).</p>
+
+      </section>
+
+      <section class="teach" id="teach">
+
+        <h1>Ensino e Divulgação</h1>
+
+        <img class="cabecalho_img" src="./img/teach.jpg">
+        <p><b>Experiência em ensino</b></p>
+        <p><b>2019 & 2020 (dois semestres)</b> Monitoria no curso de graduação “Diversidade e Evolução de 
+        Organismos Fotossintetizante” (Universidade de São Paulo, Brasil). Auxílio na preparação e 
+        apresentação de aulas práticas e suporte de alunos durante atividades e estudos extra-classe. </p>
+        <p><b>2018</b> Monitoria no curso de graduação “Genética" (Universidade de São Paulo, Brasil).  
+        Auxílio na preparação de aulas práticas com <i>Drosophila</i> e suporte de alunos durante 
+        atividades e estudos extra-classe.</p>
+        <p> </p>
+        <p><b>Serviço e Divulgação</b></p>
+        <p><b>2020</b><a href="https://www.kew.org/read-and-watch/campo-rupestre-brazil-secret-gardens"> “Brazil’s secret gardens”</a>. Publicação de <i>Science Story</i> 
+         para o website do Kew.</p>
+          <p><b>2019</b> Membro do time de organização do <a href="https://www.inaturalist.org/projects/university-of-sao-paulo-natural-reserve-bioblitz-ngs-2019">“Bioblitz program: Counting Species Through 
+          Citizen Science”</a>, organizado na Universidade de São Pauli, Brasil.</p>
+        <p><b>2018-2020</b> Organização dos congressos 21ª, 22ª e 23ª <a href="https://semanatematica.ib.usp.br/"><i>Semana Temática da Biologia</i></a>.</p>
+
+      </section>
+
+      <section class="field" id="field">
+          <h1>Campo</h1>
+        <!-- Images used to open the lightbox -->
+                  <div class="row-x">
+                    <div class="column-x">
+                      <img src="./img/img1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img2.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img3.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img4.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img5.JPG" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img6.JPG" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img7.JPG" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img8.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    </div>
+                    <div class="column-x">
+                      <img src="./img/img9.JPG" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                    </div>
+                  </div>
+    
+              <!-- The Modal/Lightbox -->
+                    <div id="myModal-x" class="modal-x">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content-x">
+    
+                      <div class="mySlides-x">
+                      <div class="numbertext">1 / 9</div>
+                      <img src="./img/img1_wide.JPG" style="width:60%;">
+                      </div>
+    
+                      <div class="mySlides-x">
+                      <div class="numbertext">2 / 9</div>
+                      <img src="./img/img2_wide.JPG" style="width:60%">
+                      </div>
+    
+                      <div class="mySlides-x">
+                      <div class="numbertext">3 / 9</div>
+                      <img src="./img/img3_wide.JPG" style="width:60%">
+                      </div>
+                  
+                      <div class="mySlides-x">
+                      <div class="numbertext">4 / 9</div>
+                      <img src="./img/img4_wide.JPG" style="width:60%">
+                      </div>
+
+                      <div class="mySlides-x">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="./img/img5_wide.JPG" style="width:60%">
+                        </div>
+                      
+                      <div class="mySlides-x">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="./img/img6_wide.JPG" style="width:60%">
+                        </div>
+                    
+                      <div class="mySlides-x">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="./img/img7_wide.JPG" style="width:60%">
+                        </div>
+                  
+                      <div class="mySlides-x">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="./img/img8_wide.JPG" style="width:60%">
+                        </div>
+                
+                      <div class="mySlides-x">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="./img/img9_wide.JPG" style="width:60%">
+                        </div>
+                        
+                    </div>
+
+    
+    
+              <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+              <!-- Caption text -->
+                  <div class="caption-container">
+                  <p id="caption"></p>
+                  </div>
+    
+                              
+              </div>        
+
+
+
+      </section>
+
+      <section class="cv" id="cv">
+          <h1>CV & Contato</h1>
+          <img class="cabecalho_img" src="./img/cv.jpg">
+            <p>  </p>
+            
+            <a href="./img/CV_RCPizzardo.pdf"><button class="button">C.V.</button></a>
+            <p>Por favor, me contate pelo twitter ou email: <b>raquel.pizzardo@gmail.com</b></p>
+            
+            <div class="icon-rd">
+            <a href="https://twitter.com/RPizzardo"><img class="twitter" src="./img/twitter-brands.svg"></a>
+            <a href="https://github.com/rpizzardo"> <img class="github" src="./img/github-brands.svg"> </a>
+            <a href="https://www.researchgate.net/profile/Raquel_Pizzardo"> <img class="researchgate" src="./img/researchgate-brands.svg"></a>
+            <a href="http://lattes.cnpq.br/3922305353010329"><img class="lattes" src="./img/lattes.svg"></a>
+            </div>
+
+           <p><i>Outubro 2020</i></p>
+   
+
+       </section>
+
+    </body></html>
