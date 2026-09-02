@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fieldwork — Raquel C. Pizzardo</title>
+<meta name="description" content="Fieldwork photos from Raquel C. Pizzardo's research in Brazil and beyond.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-name">Raquel C. Pizzardo</a>
+    <nav class="topnav-links" aria-label="Site navigation">
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="fieldwork.html" class="is-active">Fieldwork</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="content">
+
+  <section class="section">
+    <h1>Fieldwork</h1>
+    <p class="section-intro">A few moments from field seasons in Brazil and beyond. Click a photo to enlarge.</p>
+
+    <div class="gallery" id="gallery">
+      <!-- Currently pointing at photos from your existing site.
+           Move images into img/ and update these paths whenever you're ready. -->
+      <button class="gallery-item" data-full="img/img1_wide.jpg"><img src="img/img1.jpg" alt="Fieldwork photo 1" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img2_wide.jpg"><img src="img/img2.jpg" alt="Fieldwork photo 2" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img3_wide.JPG"><img src="img/img3.JPG" alt="Fieldwork photo 3" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img4_wide.jpg"><img src="img/img4.jpg" alt="Fieldwork photo 4" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img5_wide.jpg"><img src="img/img5.jpg" alt="Fieldwork photo 5" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img6_wide.jpg"><img src="img/img6.jpg" alt="Fieldwork photo 6" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img7_wide.jpg"><img src="img/img7.jpg" alt="Fieldwork photo 7" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img8_wide.jpg"><img src="img/img8.jpg" alt="Fieldwork photo 8" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img9_wide.JPG"><img src="img/img9.JPG" alt="Fieldwork photo 9" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img12_wide.jpg"><img src="img/img12.jpg" alt="Fieldwork photo 10" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img13_wide.jpg"><img src="img/img13.jpg" alt="Fieldwork photo 11" loading="lazy"></button>
+      <button class="gallery-item" data-full="img/img14_wide.jpg"><img src="img/img14.jpg" alt="Fieldwork photo 12" loading="lazy"></button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-links">
+      <a href="mailto:pizzardo@umich.edu">Email</a>
+      <a href="https://twitter.com/RPizzardo" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://github.com/rpizzardo" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.researchgate.net/profile/Raquel_Pizzardo" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="http://lattes.cnpq.br/3922305353010329" target="_blank" rel="noopener">Lattes</a>
+      <a href="img/CV_RCPizzardo.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+    <p>&copy; 2026 Raquel C. Pizzardo.</p>
+  </div>
+</footer>
+
+<!-- Lightbox overlay for the fieldwork gallery -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#10094;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
